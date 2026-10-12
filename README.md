@@ -16,7 +16,7 @@ python3 -m http.server 8000
 Then open <http://localhost:8000/>. Opening `index.html` directly as a
 `file://` page is not supported because the project loads Three.js as a module.
 
-- Public URL: **Add the final public HTTPS URL here.**
+- Public URL: [https://coo64362.github.io/teacup-ride/](https://coo64362.github.io/teacup-ride/)
 - Video: [Demo 1 Video](https://youtu.be/3X2DJrxcaCo)
 
 ## Controls
@@ -107,4 +107,3 @@ this course project.
 - The ride is designed primarily for a desktop browser; entering WebXR is
   optional and is not implemented.
 - Lighting and materials are stylized rather than photorealistic.
-- The final public HTTPS URL must be added before submission.
