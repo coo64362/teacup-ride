@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacup Carnival Ride</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="instructions">
+      <strong>Whirling Porcelain</strong>
+      <span>A three-level teacup carnival ride</span>
+      <div class="controls main-controls">
+        <button id="ride-toggle" type="button">Stop ride</button>
+        <button id="camera-toggle" type="button">Ride a cup</button>
+        <button id="day-toggle" type="button">Night mode</button>
+        <label class="speed-control" for="speed-slider">
+          Ride speed
+          <input id="speed-slider" type="range" min="0.25" max="2" step="0.25" value="1" />
+          <output id="speed-output" for="speed-slider">1.00×</output>
+        </label>
+      </div>
+      <details class="learning-tools">
+        <summary>Learning tools</summary>
+        <div class="controls">
+          <button id="platform-toggle" type="button">Pause platform</button>
+          <button id="groups-toggle" type="button">Pause groups</button>
+          <button id="cups-toggle" type="button">Pause cups</button>
+          <button id="numbers-toggle" type="button">Show numbers</button>
+          <button id="axes-toggle" type="button">Show axes</button>
+          <button id="triangle-toggle" type="button">Show triangles</button>
+          <button id="texture-toggle" type="button">Hide cup paint</button>
+          <button id="performance-toggle" type="button">Show performance</button>
+        </div>
+        <small class="axis-key" hidden>
+          <span class="x-axis">Red = X (left/right)</span>
+          <span class="y-axis">Green = Y (up/down)</span>
+          <span class="z-axis">Blue = Z (forward/backward)</span>
+        </small>
+        <div class="number-panel" hidden>
+          <strong>One cup, written as numbers</strong>
+          <span>Local cup point: <code id="local-point"></code></span>
+          <span>Group world point P₁: <code id="group-point"></code></span>
+          <span>Cup world point P₂: <code id="world-point"></code></span>
+          <span>P₂ − P₁ = movement vector: <code id="difference-vector"></code></span>
+          <span class="number-note">Points end in w = 1. Movement vectors end in w = 0.</span>
+        </div>
+        <div class="performance-panel" hidden>
+          <strong>Live rendering cost</strong>
+          <span>Frames each second: <code id="fps-output">—</code></span>
+          <span>Time for one frame: <code id="frame-time-output">—</code></span>
+          <span>Draw calls this frame: <code id="draw-calls-output">—</code></span>
+          <span>Triangles this frame: <code id="triangles-output">—</code></span>
+          <span class="number-note">At 60 FPS, one frame has about 16.67 ms to finish.</span>
+        </div>
+      </details>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="main.js?v=20261011-bright-cup-shadows"></script>
+  </body>
+</html>
