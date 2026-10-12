@@ -1,6 +1,6 @@
-# Demo 1 — Whirling Porcelain
+# Demo 1 — Teacup Ride
 
-Whirling Porcelain is a Three.js teacup carnival ride made for the WebXR
+Teacup Ride is a Three.js teacup carnival ride made for the WebXR
 carnival-ride demonstration. It runs as a desktop web page and demonstrates
 nested transforms, textured geometry, several kinds of real-time lights,
 shadows, switchable cameras, and performance-conscious rendering.
